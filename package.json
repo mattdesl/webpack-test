@@ -15,7 +15,9 @@
     "webpack-dev-server": "^2.11.1"
   },
   "scripts": {
-    "start": "webpack-dev-server index.js --inline --hot"
+    "build": "webpack --progress",
+    "start": "webpack-dev-server --inline --hot",
+    "clean": "rm -rf build"
   },
   "keywords": [],
   "repository": {

@@ -1,4 +1,8 @@
-const util = require('./util');
+let util = require('./util');
+
+if (module.hot) {
+  module.hot.accept('./util', () => util = require('./util'))
+}
 
 const canvas = document.createElement('canvas');
 document.body.appendChild(canvas);
